@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
+<meta content="코딩 테스트 웹페이지는 개발자의 역량을 평가하는 데 중요한 역할을 합니다. 효과적인 코딩 테스트 준비를 위한 정보와 팁을 제공하여 개발자 채용 과정을 지원합니다." name="description"/>
+<title>코딩 테스트 완벽 가이드: 효과적인 준비 전략 및 팁</title>
+
+<link as="style" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap" rel="preload"/>
+<link as="style" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap" rel="preload"/>
+<link as="style" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;700&display=swap" rel="preload"/>
+<link as="style" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;700&display=swap" rel="preload"/>
+<link as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="preload"/>
+<link as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:400;700&display=swap" rel="preload"/>
+<link as="style" href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;700&display=swap" rel="preload"/>
+<link as="style" href="https://fonts.googleapis.com/css2?family=Liter&display=swap" rel="preload"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:400;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Liter&display=swap" rel="stylesheet"/>
+
+<link href="https://cdn.jsdelivr.net/npm/socicon@3.0.5/css/socicon.css" rel="stylesheet">
+
+<style>
+:root {
+    --primary-color: #F3722C;
+    --secondary-color: #43AA8B;
+    --background-color: #FEECEC;
+    --text-color: #333333;
+    --heading-color: #000000;
+    --white-color: #FFFFFF;
+    --light-grey: #f7f7f7;
+}
+
+body {
+    margin: 0;
+    font-family: 'Golos Text', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+    padding: 6rem 0;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+    text-align: center;
+}
+
+.section-subtitle, .paragraph-text {
+    font-family: 'Golos Text', sans-serif;
+    color: var(--text-color);
+}
+
+.section-btn-wrapper {
+    display: inline-block;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #DB5E1C;
+    opacity: 0.9;
+}
+
+.btn.btn-white {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+.btn.btn-white:hover {
+    background-color: #F0F0F0;
+    color: var(--primary-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #C04E1D;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header16 {
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+    padding: 0;
+}
+
+.header16.fullscreen-section {
+    min-height: 100vh;
+}
+.header16.parallax-background {
+    background-attachment: fixed;
+}
+
+
+.header16 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.header16 .content-wrap {
+    position: relative;
+    z-index: 1;
+    padding: 8rem 3rem 6rem 3rem;
+    max-width: 900px;
+}
+
+.header16 .hero-title {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+.header16 .hero-text {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    color: var(--white-color);
+}
+
+.main-navbar {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 1rem;
+    z-index: 1000;
+    border-radius: 100vw;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+}
+
+.main-navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.main-navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.main-navbar .navbar-logo img {
+    height: 3rem;
+    margin-right: 10px;
+}
+
+.main-navbar .navbar-caption-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--heading-color);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.main-navbar .navbar-toggler {
+    display: none;
+}
+
+.main-navbar .navbar-collapse {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-navbar .navbar-nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-navbar .nav-item .nav-link {
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.main-navbar .nav-item .nav-link:hover {
+    background-color: rgba(var(--primary-color), 0.1);
+}
+
+.main-navbar .navbar-buttons .btn-primary-outline {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px 25px;
+    font-size: 1.1rem;
+}
+
+.main-navbar .navbar-buttons .btn-primary-outline:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.news-section {
+    background-color: var(--white-color);
+}
+
+.news-section .content-head {
+    max-width: 800px;
+    margin-bottom: 3rem;
+}
+
+.news-section .section-title {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.news-section .item-wrapper {
+    background: var(--white-color);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-section .item-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.news-section .item-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+
+.news-section .item-subtitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: var(--heading-color);
+}
+
+.news-section .paragraph-text {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #666666;
+}
+
+.news-section .item-footer {
+    margin-top: auto;
+    text-align: left;
+}
+
+.news-section .item-footer .section-btn-wrapper {
+    text-align: left;
+}
+
+.news-section .item-footer .btn {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+.gallery-section {
+    background-color: var(--background-color);
+    position: relative; /* 캐러셀 버튼을 위한 position */
+}
+
+.gallery-section .section-title {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-section .carousel-container {
+    max-width: 900px; /* 캐러셀 최대 너비 */
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-section .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery-section .carousel-item {
+    min-width: 100%; /* 각 슬라이드가 컨테이너 너비를 채우도록 */
+    box-sizing: border-box;
+}
+
+.gallery-section .carousel-item img {
+    width: 100%;
+    height: 400px; /* 이미지 높이 조절 */
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.gallery-section .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-section .carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.gallery-section .carousel-control.prev {
+    left: 10px;
+}
+
+.gallery-section .carousel-control.next {
+    right: 10px;
+}
+
+.gallery-section .carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.gallery-section .carousel-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-section .carousel-indicator.active {
+    background-color: var(--primary-color);
+}
+
+
+.full-width-image {
+    background-size: cover;
+    background-position: center center;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.metrics-section {
+    background-color: var(--white-color);
+}
+
+.metrics-section .item-wrapper {
+    background: var(--white-color);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.metrics-section .card-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.metrics-section .card-text {
+    font-size: 1.2rem;
+    color: var(--heading-color);
+}
+
+.testimonials-section {
+    background-color: var(--background-color);
+}
+
+.testimonials-section .testimonial-text {
+    font-size: 1.8rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+    color: var(--heading-color);
+    text-align: center;
+}
+
+.testimonials-section .img-wrapper img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1rem auto;
+    border: 3px solid var(--primary-color);
+}
+
+.testimonials-section .author-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.cta-section {
+    background-size: cover;
+    background-position: center center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white-color);
+    position: relative;
+}
+
+.cta-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.cta-section .card-wrapper {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.cta-section .cta-title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--white-color);
+}
+
+.cta-section .paragraph-text {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    color: var(--white-color);
+}
+
+.cta-section .section-btn-wrapper .btn {
+    background-color: var(--secondary-color);
+}
+
+.cta-section .section-btn-wrapper .btn:hover {
+    background-color: #379172;
+}
+
+.social-follow {
+    background-color: var(--light-grey);
+    padding: 4rem 0;
+}
+
+.social-follow .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.social-follow .social-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-follow .soc-item {
+    margin: 0 15px;
+}
+
+.social-follow .soc-item a .social-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 28px;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.social-follow .soc-item a .social-icon:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    transform: translateY(-3px);
+}
+
+.contact-form {
+    background-color: var(--white-color);
+}
+
+.contact-form .section-title {
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+}
+
+.contact-form .contact-form-body {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background: var(--white-color);
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form .form-control {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.contact-form textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form .section-btn-wrapper .btn {
+    width: 100%;
+    padding: 12px 20px;
+}
+
+.contact-form .alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.contact-form .alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.contact-form .alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+.contact-info {
+    background-color: var(--background-color);
+}
+
+.contact-info .section-title {
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+}
+
+.contact-info .item-wrapper {
+    background: var(--white-color);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contact-info .item-subtitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: var(--heading-color);
+}
+
+.contact-info .paragraph-text {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    color: #666666;
+}
+
+.main-footer {
+    background-color: var(--light-grey);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.main-footer .copyright-text {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+/* Back to Top Button Styles */
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+#back-to-top:hover {
+    opacity: 1;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1001; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; /* Center the modal vertically and horizontally */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more responsive */
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .header16 .hero-title {
+        font-size: 3rem;
+    }
+    .header16 .hero-text {
+        font-size: 1.2rem;
+    }
+    .main-navbar .container {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        border-radius: 12px;
+    }
+    .main-navbar .navbar-brand {
+        margin-bottom: 1rem;
+    }
+    .main-navbar .navbar-collapse {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+    .main-navbar .navbar-nav-list {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .main-navbar .nav-item .nav-link {
+        padding: 8px 15px;
+    }
+    .main-navbar .navbar-buttons {
+        width: 100%;
+        text-align: center;
+    }
+    .main-navbar .navbar-buttons .btn {
+        width: 100%;
+    }
+
+    .news-section .item.col-lg-3,
+    .metrics-section .item.col-lg-4,
+    .contact-info .item.col-lg-4 {
+        width: 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 2rem;
+    }
+    .gallery-section .carousel-item img {
+        height: 300px; /* 반응형 높이 조절 */
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        padding: 4rem 0;
+    }
+    .header16 .content-wrap {
+        padding: 5rem 1rem 3rem 1rem;
+    }
+    .header16 .hero-title {
+        font-size: 2.2rem;
+    }
+    .header16 .hero-text {
+        font-size: 1.1rem;
+    }
+    .main-navbar .navbar-caption-text {
+        font-size: 1.2rem;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .news-section .item.col-md-6,
+    .metrics-section .item.col-md-6,
+    .contact-info .item.col-md-6 {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .news-section .item-img img {
+        height: 200px;
+    }
+    .gallery-section .carousel-item img {
+        height: 250px; /* 반응형 높이 조절 */
+    }
+    .news-section .item-subtitle {
+        font-size: 1.5rem;
+    }
+    .metrics-section .card-title {
+        font-size: 3rem;
+    }
+    .testimonials-section .testimonial-text {
+        font-size: 1.4rem;
+    }
+    .testimonials-section .img-wrapper img {
+        width: 100px;
+        height: 100px;
+    }
+    .cta-section .cta-title {
+        font-size: 2.5rem;
+    }
+    .cta-section .paragraph-text {
+        font-size: 1.1rem;
+    }
+    .social-follow .soc-item {
+        margin: 0 10px;
+    }
+    .social-follow .soc-item a .social-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+    .contact-form .contact-form-body {
+        padding: 1.5rem;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-12, .col-md-10, .col-md-6, .col-lg-3, .col-lg-4, .col-lg-8 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 768px) {
+    .col-md-10 {
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media (min-width: 992px) {
+    .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-lg-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .col-lg-8 {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+.align-center {
+    text-align: center;
+}
+.align-left {
+    text-align: left;
+}
+.mb-0 { margin-bottom: 0 !important; }
+.mb-3 { margin-bottom: 1rem !important; }
+.mb-4 { margin-bottom: 1.5rem !important; }
+.mb-5 { margin-bottom: 3rem !important; }
+.mt-3 { margin-top: 1rem !important; }
+.mt-4 { margin-top: 1.5rem !important; }
+
+</style>
+</head>
+<body>
+<section class="header16 fullscreen-section parallax-background" id="hero-section" style="background-image: url('imgs/assets_task_01jv08rybke018pgwd1cbhgj5d_1746987248_img_3.jpg');">
+<div class="overlay"></div>
+<div class="container-fluid">
+<div class="row">
+<div class="content-wrap col-12 col-md-10">
+<h1 class="hero-title section-title white-text mb-4">
+<strong>코딩 테스트</strong>
+</h1>
+<div class="section-btn-wrapper"><a class="btn btn-white" href="#news-section">시작하기</a></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="menu menu1 main-navbar" id="main-navbar">
+    <div class="container">
+        <nav class="navbar navbar-dropdown">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="#">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Your Logo Here" style="height: 3rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption-text text-black" href="#">Coding Test</a></span>
+            </div>
+            <div class="navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav-list nav-dropdown">
+                    <li class="nav-item"><a class="nav-link link text-black" href="#hero-section">소개</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black" href="#news-section">서비스</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black" href="#contact-form">문의</a></li>
+                </ul>
+                <div class="navbar-buttons section-btn-wrapper">
+                    <a class="btn btn-primary-outline" id="login-button" href="#">로그인</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<section class="news-section" id="news-section">
+    <div class="container-fluid">
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 content-head">
+                <div class="section-header">
+                    <h4 class="section-title align-center mb-0">
+                        <strong>최신 뉴스</strong>
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="item feature-item col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="imgs/premium_photo-1661877737564-3dfd7282efcb.jpg" alt="최신 코딩 트렌드 이미지"/>
+                    </div>
+                    <div class="item-content align-left">
+                        <h6 class="item-subtitle mb-3" data-title="코딩 테스트 준비를 위한 교육 프로그램">
+                             <strong>코딩 테스트 준비를 위한 교육 프로그램</strong>
+                        </h6>
+                        <p class="paragraph-text mb-3">2025년 6월 11일</p>
+                        <p class="paragraph-text mb-3" data-content="본 교육 프로그램은 합격을 위한 코딩 테스트 전략에 중점을 둡니다. 실무 중심 커리큘럼으로 문제 해결 능력을 향상시키고, 최신 트렌드에 맞는 알고리즘과 자료 구조를 학습할 수 있습니다. 전문가의 멘토링과 실제 기업 과제 풀이를 통해 단숨에 앞서갈 기회를 잡으세요.">합격을 부르는 코딩 테스트 전략 교육 – 실무 중심 커리큘럼으로 단숨에 앞서가세요!</p>
+                        <div class="section-btn-wrapper item-footer"><a href="#" class="btn btn-primary view-details-btn">더보기</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item feature-item col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="imgs/photo-1550751827-4bd374c3f58b.jpg" alt="실전 코딩 프로젝트 이미지"/>
+                    </div>
+                    <div class="item-content align-left">
+                        <h6 class="item-subtitle mb-3" data-title="AI 시대의 코딩 테스트 변화">
+                             <strong>AI 시대의 코딩 테스트 변화</strong>
+                        </h6>
+                        <p class="paragraph-text mb-3">2025년 6월 04일</p>
+                        <p class="paragraph-text mb-3" data-content="AI 기술의 발전은 코딩 테스트의 패러다임을 변화시키고 있습니다. 단순한 알고리즘 지식뿐만 아니라, AI 관련 문제 해결 능력과 효율적인 코드 작성 능력이 더욱 중요해지고 있습니다. 지금 바로 새로운 기준에 맞는 합격 전략을 준비하고, 변화하는 코딩 테스트 환경에 적응하세요.">AI 시대, 코딩 테스트는 진화 중 – 지금 바로 새로운 기준에 맞는 합격 전략을 준비하세요!</p>
+                        <div class="section-btn-wrapper item-footer"><a href="#" class="btn btn-primary view-details-btn">더보기</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item feature-item col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="imgs/ilya-pavlov-OqtafYT5kTw-unsplash.png" alt="실전 코딩 프로젝트 이미지"/>
+                    </div>
+                    <div class="item-content align-left">
+                        <h6 class="item-subtitle mb-3" data-title="최신 코딩 트렌드">
+                            <strong>최신 코딩 트렌드</strong>
+                        </h6>
+                        <p class="paragraph-text mb-3">2025년 5월 28일</p>
+                        <p class="paragraph-text mb-3" data-content="개발 트렌드는 빠르게 변화하고 있습니다. 본 기사에서는 최신 프로그래밍 언어, 프레임워크, 개발 방법론 등 주목할 만한 코딩 트렌드를 분석합니다. 전문가 팁과 유용한 정보들을 통해 여러분의 개발 역량을 한 단계 업그레이드할 기회를 놓치지 마세요!">새로운 코딩 기술 트렌드를 따라잡으세요. 전문가 팁과 유용한 정보!</p>
+                        <div class="section-btn-wrapper item-footer"><a href="#" class="btn btn-primary view-details-btn">더보기</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item feature-item col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="imgs/premium_photo-1661878265739-da90bc1af051.jpg" alt="실전 코딩 프로젝트 이미지"/>
+                    </div>
+                    <div class="item-content align-left">
+                        <h6 class="item-subtitle mb-3" data-title="실전 코딩 프로젝트">
+                            <strong>실전 코딩 프로젝트</strong>
+                        </h6>
+                        <p class="paragraph-text mb-3">2025년 5월 21일</p>
+                        <p class="paragraph-text mb-3" data-content="이 프로젝트는 실제 기업에서 사용되는 코딩 문제를 기반으로 합니다. 이론만으로는 부족한 실전 감각을 익히고, 팀 프로젝트를 통해 협업 능력을 기를 수 있습니다. 지금 참여하여 포트폴리오를 강화하고, 취업 경쟁력을 높이세요!">실제 프로젝트를 통해 코딩 실력을 향상시키세요. 지금 참여하세요!</p>
+                        <div class="section-btn-wrapper item-footer"><a href="#" class="btn btn-primary view-details-btn">더보기</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item feature-item col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="imgs/premium_photo-1678565879444-f87c8bd9f241.jpg" alt="코딩 인터뷰 준비 이미지"/>
+                    </div>
+                    <div class="item-content align-left">
+                        <h6 class="item-subtitle mt-0 mb-3" data-title="코딩 인터뷰 준비">
+                            <strong>코딩 인터뷰 준비</strong>
+                        </h6>
+                        <p class="paragraph-text mb-3">2025년 5월 14일</p>
+                        <p class="paragraph-text mb-3" data-content="성공적인 코딩 인터뷰를 위한 모든 것을 준비하세요. 흔히 나오는 질문 유형 분석, 효과적인 문제 해결 전략, 그리고 면접관에게 깊은 인상을 남기는 팁까지. 이 가이드와 함께라면 코딩 인터뷰를 완벽하게 준비하고, 꿈의 직장을 향해 한 걸음 더 나아갈 수 있습니다.">코딩 인터뷰를 완벽하게 준비하세요. 합격 전략 공개!</p>
+                        <div class="section-btn-wrapper item-footer"><a href="#" class="btn btn-primary view-details-btn">더보기</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item feature-item col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="imgs/photo-1525547719571-a2d4ac8945e2.jpg" alt="코딩 생산성 향상 이미지"/>
+                    </div>
+                    <div class="item-content align-left">
+                        <h6 class="item-subtitle mt-0 mb-3" data-title="코딩 생산성 향상">
+                            <strong>코딩 생산성 향상</strong>
+                        </h6>
+                        <p class="paragraph-text mb-3">2025년 5월 7일</p>
+                        <p class="paragraph-text mb-3" data-content="효율적인 코딩 습관은 개발자의 생산성을 크게 좌우합니다. 본 콘텐츠에서는 코드 작성 속도를 높이고, 디버깅 시간을 줄이며, 더 깔끔하고 유지보수하기 쉬운 코드를 작성하는 방법을 제시합니다. 스마트한 도구 활용법과 시간 관리 팁을 통해 여러분의 코딩 생산성을 극대화하세요!">효율적인 코딩 습관을 기르세요. 생산성을 높이는 방법!</p>
+                        <div class="section-btn-wrapper item-footer"><a href="#" class="btn btn-primary view-details-btn">더보기</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gallery-section" id="gallery-section">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="section-header mb-5">
+                    <h4 class="section-title text-center mb-0">
+                        <strong>코딩 챌린지 갤러리</strong>
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="imgs/photo-1550751827-4bd374c3f58b.jpg" alt="코딩 갤러리 이미지 1"/>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/photo-1451187580459-43490279c0fa.jpg" alt="코딩 갤러리 이미지 2"/>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/premium_photo-1670992114120-4e481a5c89c5.jpg" alt="코딩 갤러리 이미지 3"/>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/photo-1697577418970-95d99b5a55cf.jpg" alt="코딩 갤러리 이미지 4"/>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/istockphoto-2022774836-612x612.jpg" alt="새로운 코딩 갤러리 이미지 5"/>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/premium_photo-1663100722417-6e36673fe0ed.jpg" alt="새로운 코딩 갤러리 이미지 6"/>
+                </div>
+            </div>
+            <button class="carousel-control prev">❮</button>
+            <button class="carousel-control next">❯</button>
+            <div class="carousel-indicators">
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="full-width-image" id="full-width-image" style="background-image: url('imgs/istockphoto-480957696-2048x2048 (1).jpg');">
+    <div class="container"></div>
+</section>
+
+<section class="metrics-section" id="metrics-section">
+  <div class="container">
+    <div class="row" style="display: flex; flex-wrap: nowrap; justify-content: space-between; gap: 30px; text-align: center;">
+      
+      <div class="feature-item" style="flex: 1; padding: 10px;">
+        <div class="item-wrapper">
+          <div class="card-box">
+            <p class="card-title mb-3"><strong>500+</strong></p>
+            <p class="card-text mb-3">만족한 고객</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-item" style="flex: 1; padding: 10px;">
+        <div class="item-wrapper">
+          <div class="card-box">
+            <p class="card-title mb-3"><strong>100+</strong></p>
+            <p class="card-text mb-3">성공적인 프로젝트</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-item" style="flex: 1; padding: 10px;">
+        <div class="item-wrapper">
+          <div class="card-box">
+            <p class="card-title mb-3"><strong>20+</strong></p>
+            <p class="card-text mb-3">수상 경력</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-section parallax-background" id="cta-section" style="background-image: url('imgs/istockphoto-2162568511-2048x2048.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card col-12 col-md-12 col-lg-10">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                        <h1 class="cta-title mb-4">
+                            <strong>코딩 마스터</strong>
+                        </h1>
+                        <p class="paragraph-text mb-4">
+                            최고의 코딩 전문가가 되어 보세요!
+                        </p>
+                        <div class="section-btn-wrapper mt-4">
+                            <a class="btn btn-secondary" href="#contact-form">시작하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="social-follow" id="social-follow">
+    <div class="container">
+        <div class="row">
+            <h3 class="section-title align-center mb-5">
+                <strong>팔로우하세요</strong>
+            </h3>
+            <div class="col-12">
+                <div class="social-row">
+                    <div class="soc-item">
+                        <a href="https://x.com/" target="_blank">
+                            <span class="social-icon socicon-twitter socicon"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="https://www.facebook.com/?locale=ko_KR" target="_blank">
+                            <span class="social-icon socicon-facebook socicon"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="https://www.youtube.com/?hl=ko&gl=KR&app=desktop" target="_blank"> <span class="social-icon socicon-youtube socicon"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <span class="social-icon socicon-instagram socicon"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="https://kr.linkedin.com/" target="_blank">
+                            <span class="social-icon socicon-linkedin socicon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-form" id="contact-form">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="section-header mb-5">
+                    <h3 class="section-title align-center mb-0">
+                        <strong>문의하세요</strong>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mx-auto contact-form-body">
+                <form id="contactForm" action="#" method="POST" class="row">
+                    <div class="col-12">
+                        <input type="text" name="name" id="contactName" placeholder="이름" class="form-control" required/>
+                    </div>
+                    <div class="col-12">
+                        <input type="email" name="email" id="contactEmail" placeholder="이메일" class="form-control" required/>
+                    </div>
+                    <div class="col-12">
+                        <textarea name="message" id="contactMessage" placeholder="메시지" class="form-control"></textarea>
+                    </div>
+                    <div class="col-12" id="form-messages">
+                        </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 align-center section-btn-wrapper">
+                        <button type="submit" class="btn btn-primary">보내기</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-info" id="contact-info">
+  <div class="container">
+    <div class="row" style="display: flex; flex-wrap: nowrap; justify-content: space-between; text-align: center; gap: 30px;">
+      
+      <div class="feature-item" style="flex: 1; padding: 10px;">
+        <div class="item-wrapper" style="border: 1px solid transparent;">
+          <div class="item-content">
+            <h6 class="item-subtitle mb-3"><strong>전화</strong></h6>
+            <p class="paragraph-text mb-3">010-4150-7302</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-item" style="flex: 1; padding: 10px;">
+        <div class="item-wrapper" style="border: 1px solid transparent;">
+          <div class="item-content">
+            <h6 class="item-subtitle mb-3"><strong>이메일</strong></h6>
+            <p class="paragraph-text mb-3">wnsgks0205@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-item" style="flex: 1; padding: 10px;">
+        <div class="item-wrapper" style="border: 1px solid transparent;">
+          <div class="item-content">
+            <h6 class="item-subtitle mb-3"><strong>주소</strong></h6>
+            <p class="paragraph-text mb-3">서울특별시 용산구 보광로 73</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="main-footer" id="main-footer">
+    <div class="container">
+        <div class="row text-white">
+            <div class="col-12 copyright-text">
+                <p class="align-center mb-0">
+                    © 2025 Coding Test. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<button onclick="topFunction()" id="back-to-top" title="Go to top">▲</button>
+
+<div id="newsDetailModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalContent"></p>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Smooth Scrolling for Navigation and Call-to-Action Buttons
+        $('a[href^="#"]').on('click', function(event) {
+            const target = $(this.hash);
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top - $('.main-navbar').outerHeight() // Adjust for fixed navbar height
+                }, 800);
+            }
+        });
+
+        // Specific handling for the "로그인" button
+        $('#login-button').on('click', function(e) {
+            e.preventDefault();
+            alert('로그인 기능은 현재 개발 중입니다!');
+        });
+
+        // Back to Top Button Functionality
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+
+        $('#back-to-top').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, 800);
+        });
+
+        // Image Carousel Functionality
+        const $carouselInner = $('.carousel-inner');
+        const $carouselItems = $('.carousel-item');
+        const $prevBtn = $('.carousel-control.prev');
+        const $nextBtn = $('.carousel-control.next');
+        const $indicatorsContainer = $('.carousel-indicators');
+        let currentIndex = 0;
+        const totalItems = $carouselItems.length;
+        let autoSlideInterval;
+
+        function updateCarousel() {
+            const itemWidth = $carouselItems.first().width();
+            $carouselInner.css('transform', 'translateX(' + (-currentIndex * itemWidth) + 'px)');
+            updateIndicators();
+        }
+
+        function updateIndicators() {
+            $indicatorsContainer.empty();
+            for (let i = 0; i < totalItems; i++) {
+                const $indicator = $('<div class="carousel-indicator"></div>');
+                if (i === currentIndex) {
+                    $indicator.addClass('active');
+                }
+                $indicator.data('slide-to', i);
+                $indicatorsContainer.append($indicator);
+            }
+        }
+
+        function goToSlide(index) {
+            currentIndex = (index + totalItems) % totalItems;
+            updateCarousel();
+        }
+
+        function nextSlide() {
+            goToSlide(currentIndex + 1);
+        }
+
+        function prevSlide() {
+            goToSlide(currentIndex - 1);
+        }
+
+        $nextBtn.on('click', nextSlide);
+        $prevBtn.on('click', prevSlide);
+
+        $indicatorsContainer.on('click', '.carousel-indicator', function() {
+            const slideTo = $(this).data('slide-to');
+            goToSlide(slideTo);
+            resetAutoSlide();
+        });
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 3000);
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            startAutoSlide();
+        }
+
+        $(window).on('resize load', function() {
+            updateCarousel();
+        });
+
+        startAutoSlide();
+
+        // News Detail Modal Functionality
+        const $newsDetailModal = $('#newsDetailModal');
+        const $modalTitle = $('#modalTitle');
+        const $modalContent = $('#modalContent');
+        const $closeButton = $('.close-button');
+
+        $('.view-details-btn').on('click', function(e) {
+            e.preventDefault();
+            const $itemContent = $(this).closest('.item-content');
+            const title = $itemContent.find('.item-subtitle').data('title');
+            const content = $itemContent.find('.paragraph-text[data-content]').data('content'); // Get data-content from paragraph-text
+
+            $modalTitle.text(title);
+            $modalContent.text(content || '자세한 내용이 없습니다.'); // Fallback if no data-content
+            $newsDetailModal.css('display', 'flex'); // Use flex to center
+        });
+
+        $closeButton.on('click', function() {
+            $newsDetailModal.css('display', 'none');
+        });
+
+        $(window).on('click', function(event) {
+            if ($(event.target).is($newsDetailModal)) {
+                $newsDetailModal.css('display', 'none');
+            }
+        });
+
+        // Contact Form Validation Functionality (Enhanced Feedback)
+        $('#contactForm').on('submit', function(e) {
+            e.preventDefault();
+
+            const $name = $('#contactName');
+            const $email = $('#contactEmail');
+            const $message = $('#contactMessage');
+            const $formMessages = $('#form-messages');
+
+            $formMessages.empty();
+
+            let isValid = true;
+            let errorMessage = '';
+
+            if ($name.val().trim() === '') {
+                isValid = false;
+                errorMessage += '이름을 입력해주세요.<br>';
+                $name.css('border', '1px solid red');
+            } else {
+                $name.css('border', '1px solid #ddd');
+            }
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if ($email.val().trim() === '') {
+                isValid = false;
+                errorMessage += '이메일을 입력해주세요.<br>';
+                $email.css('border', '1px solid red');
+            } else if (!emailPattern.test($email.val())) {
+                isValid = false;
+                errorMessage += '유효한 이메일 주소를 입력해주세요.<br>';
+                $email.css('border', '1px solid red');
+            } else {
+                $email.css('border', '1px solid #ddd');
+            }
+
+            if (!isValid) {
+                $formMessages.html('<div class="alert alert-danger">' + errorMessage + '</div>');
+            } else {
+                $formMessages.html('<div class="alert alert-success">성공적으로 메시지를 보냈습니다! 감사합니다.</div>');
+                // Simulate form submission success
+                // In a real application, you would send the form data to a server here using AJAX
+                // e.g., $.ajax({ url: 'submit_form.php', method: 'POST', data: $(this).serialize() });
+                
+                // Clear the form after a short delay for the user to see the success message
+                setTimeout(function() {
+                    $('#contactForm')[0].reset(); 
+                    $formMessages.empty(); // Clear success message after reset
+                }, 3000); 
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
